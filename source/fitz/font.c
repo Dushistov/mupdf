@@ -30,7 +30,6 @@
 
 #include <ft2build.h>
 #include "hb.h"
-#include "hb-ft.h"
 
 #include <assert.h>
 

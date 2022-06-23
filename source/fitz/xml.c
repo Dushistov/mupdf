@@ -26,8 +26,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#if 0
 #include <gumbo.h>
-
+#endif
 /* #define FZ_XML_SEQ */
 
 static const struct { const char *name; int c; } html_entities[] = {
@@ -908,7 +909,7 @@ fz_parse_xml(fz_context *ctx, fz_buffer *buf, int preserve_white)
 
 	return xml;
 }
-
+#if 0
 /*
 	Parse the contents of buffer into a tree of XML nodes, using the HTML5 syntax.
 
@@ -1160,3 +1161,4 @@ fz_xml *fz_keep_xml(fz_context *ctx, fz_xml *xml)
 	/* Return the original node pointer, not the dom pointer! */
 	return xml;
 }
+#endif
